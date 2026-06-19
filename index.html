@@ -5,13 +5,13 @@ body{background:#ffffff;display:flex;justify-content:center;font-family:sans-ser
 #gc{display:block;touch-action:none;border-radius:12px 12px 0 0;}
 #wrap{position:relative;width:100%;cursor:default;}
 #hud{position:absolute;top:8px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 10px;pointer-events:none;gap:5px;flex-wrap:wrap;}
-.pill{background:rgba(0,0,0,0.6);color:#fff;padding:4px 9px;border-radius:20px;font-size:12px;font-weight:500;white-space:nowrap;}
-.gold{color:#ffd700;}
-#combo-disp{position:absolute;top:48px;left:50%;transform:translateX(-50%);pointer-events:none;font-weight:700;opacity:0;transition:opacity 0.3s;white-space:nowrap;font-size:18px;}
-#lv-banner{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);pointer-events:none;font-size:26px;font-weight:700;color:#fff;text-shadow:0 0 18px #fff;opacity:0;text-align:center;}
+.pill{background:rgba(0,0,0,0.12);color:#222;padding:4px 9px;border-radius:20px;font-size:12px;font-weight:500;white-space:nowrap;}
+.gold{color:#cc8800;}
+#combo-disp{position:absolute;top:48px;left:50%;transform:translateX(-50%);pointer-events:none;font-weight:700;opacity:0;transition:opacity 0.3s;white-space:nowrap;font-size:18px;text-shadow:0 1px 4px rgba(0,0,0,0.2);}
+#lv-banner{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);pointer-events:none;font-size:26px;font-weight:700;color:#333;text-shadow:0 0 12px rgba(255,200,0,0.5);opacity:0;text-align:center;}
 #freeze-bar{position:absolute;top:44px;left:50%;transform:translateX(-50%);font-size:18px;font-weight:700;color:#ff6600;text-shadow:0 0 12px #ff4400;opacity:0;pointer-events:none;white-space:nowrap;}
 #sword-up{position:absolute;top:48%;left:50%;transform:translate(-50%,-50%);font-size:20px;font-weight:700;color:#ffd700;text-shadow:0 0 12px #ffa;opacity:0;pointer-events:none;white-space:nowrap;transition:opacity 0.3s;}
-#credit{position:absolute;bottom:6px;right:10px;color:rgba(255,255,255,0.3);font-size:10px;pointer-events:none;}
+#credit{position:absolute;bottom:6px;right:10px;color:rgba(0,0,0,0.35);font-size:10px;pointer-events:none;}
 #overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:12px;z-index:20;}
 #overlay.hidden{display:none;}
 .obox{background:rgba(8,8,28,0.94);color:#fff;border-radius:16px;padding:20px 28px;text-align:center;max-width:320px;width:90%;}
@@ -31,17 +31,17 @@ input.ni:focus{border-color:#ffd700;}
 #lb-tbl .lbsc{text-align:right;color:#ffd700;}
 #lb-tbl .lblv{text-align:right;color:rgba(255,255,255,0.4);font-size:10px;}
 /* 底部 */
-#bot{background:rgba(12,12,38,0.97);border-radius:0 0 12px 12px;border-top:1px solid rgba(255,255,255,0.07);padding:7px 10px;display:flex;flex-direction:column;gap:5px;align-items:center;}
+#bot{background:rgba(240,240,240,0.97);border-radius:0 0 12px 12px;border-top:1px solid rgba(0,0,0,0.1);padding:7px 10px;display:flex;flex-direction:column;gap:5px;align-items:center;}
 #btn-row{display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:center;}
-.tbtn{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);border-radius:9px;padding:5px 12px;font-size:12px;cursor:pointer;}
-.tbtn:hover{background:rgba(255,255,255,0.2);}
-.tbtn.on{background:rgba(255,215,0,0.2);border-color:#ffd700;color:#ffd700;}
-.ctrl-btn{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:7px;padding:3px 10px;font-size:13px;cursor:pointer;}
-.ctrl-btn:hover{background:rgba(255,255,255,0.22);}
-#sz-label{color:rgba(255,255,255,0.55);font-size:11px;min-width:34px;text-align:center;}
-.panel{display:none;width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:9px;padding:7px;}
+.tbtn{background:rgba(0,0,0,0.08);color:#333;border:1px solid rgba(0,0,0,0.18);border-radius:9px;padding:5px 12px;font-size:12px;cursor:pointer;}
+.tbtn:hover{background:rgba(0,0,0,0.15);}
+.tbtn.on{background:rgba(255,215,0,0.3);border-color:#cc9900;color:#996600;}
+.ctrl-btn{background:rgba(0,0,0,0.08);color:#333;border:1px solid rgba(0,0,0,0.18);border-radius:7px;padding:3px 10px;font-size:13px;cursor:pointer;}
+.ctrl-btn:hover{background:rgba(0,0,0,0.15);}
+#sz-label{color:rgba(0,0,0,0.55);font-size:11px;min-width:34px;text-align:center;}
+.panel{display:none;width:100%;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.12);border-radius:9px;padding:7px;}
 .panel.show{display:block;}
-.ptitle{color:rgba(255,255,255,0.45);font-size:10px;text-align:center;margin-bottom:5px;letter-spacing:1px;}
+.ptitle{color:rgba(0,0,0,0.45);font-size:10px;text-align:center;margin-bottom:5px;letter-spacing:1px;}
 .items{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;}
 .si{width:42px;height:42px;border-radius:7px;background:rgba(255,255,255,0.07);border:2px solid rgba(255,255,255,0.12);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:18px;position:relative;transition:all 0.12s;}
 .si:hover{background:rgba(255,255,255,0.16);border-color:rgba(255,255,255,0.32);}
@@ -682,18 +682,19 @@ function drawChar(){
 
 // ── 背景 ─────────────────────────────────
 function drawBg(){
-  const r=15+level*4,g2=8+level*3,b=50+level*5;
-  const grd=ctx.createLinearGradient(0,0,0,canvas.height);
-  grd.addColorStop(0,`rgb(${r},${g2},${b})`);
-  grd.addColorStop(1,`rgb(5,${15+level*2},${30+level*4})`);
-  ctx.fillStyle=grd;ctx.fillRect(0,0,canvas.width,canvas.height);
-  const t=Date.now()*0.0003;ctx.fillStyle='rgba(255,255,255,0.38)';
+  // 淺藍色背景
+  ctx.fillStyle='#e8f4ff';
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+  // 淡色裝飾點點
+  const t=Date.now()*0.0003;
+  ctx.fillStyle='rgba(200,220,255,0.5)';
   for(let i=0;i<20;i++){
     const sx=(Math.sin(i*137.5+t)*0.5+0.5)*canvas.width;
     const sy=(Math.cos(i*97.3+t*0.7)*0.5+0.5)*canvas.height*0.5;
     ctx.beginPath();ctx.arc(sx,sy,0.6+Math.sin(i+t*2)*0.4,0,Math.PI*2);ctx.fill();
   }
-  ctx.strokeStyle='rgba(255,255,255,0.05)';ctx.lineWidth=1;
+  // 地板線
+  ctx.strokeStyle='rgba(0,0,0,0.06)';ctx.lineWidth=1;
   ctx.beginPath();ctx.moveTo(0,canvas.height*0.82);ctx.lineTo(canvas.width,canvas.height*0.82);ctx.stroke();
 }
 
