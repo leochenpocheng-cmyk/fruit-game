@@ -78,9 +78,7 @@ input.ni:focus{border-color:#ffd700;}
     <div id="btn-row">
       <button class="tbtn" id="outfitBtn">👕 衣服</button>
       <button class="tbtn" id="weaponBtn">⚔️ 武器</button>
-      <button class="ctrl-btn" id="minusBtn">－</button>
-      <span id="sz-label">100%</span>
-      <button class="ctrl-btn" id="plusBtn">＋</button>
+      
       <button class="ctrl-btn" id="fsBtn">⛶ 全螢幕</button>
       <button class="ctrl-btn" id="lbBtn">🏆</button>
     </div>
@@ -825,8 +823,7 @@ window.addEventListener('resize',function(){applySize();if(!running)drawBg();});
 ['fullscreenchange','webkitfullscreenchange'].forEach(function(ev){
   document.addEventListener(ev,function(){setTimeout(applySize,100);});
 });
-document.getElementById('plusBtn').addEventListener('click',function(){if(sizeIdx<SIZES.length-1){sizeIdx++;applySize();}});
-document.getElementById('minusBtn').addEventListener('click',function(){if(sizeIdx>0){sizeIdx--;applySize();}});
+
 document.getElementById('fsBtn').addEventListener('click',function(){
   var el=gameCont;
   if(!document.fullscreenElement&&!document.webkitFullscreenElement){
